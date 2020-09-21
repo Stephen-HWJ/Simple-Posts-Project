@@ -20,4 +20,4 @@ $ expo start
 
 See the gif below.
 
-![App DEMO](https://github.com/Stephen-HWJ/Simple-Posts-Project/demo/demo.gif)]
+![App DEMO](https://github.com/Stephen-HWJ/Simple-Posts-Project/blob/master/demo/demo.gif)]
