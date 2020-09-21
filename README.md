@@ -15,3 +15,9 @@ After installing the node modules, start the expo web server:
 ```
 $ expo start
 ```
+
+## Demo
+
+See the gif below.
+
+![App DEMO](https://github.com/Stephen-HWJ/Simple-Posts-Project/demo/demo.gif)]
