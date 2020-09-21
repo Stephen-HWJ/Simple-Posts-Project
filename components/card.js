@@ -6,9 +6,7 @@ class PostCard extends React.Component {
   render() {
     return (
       <Card>
-        <Card.Title>
-          {this.props.title} - {this.props.id}
-        </Card.Title>
+        <Card.Title>{this.props.title}</Card.Title>
         <Card.Divider />
         <Text>{this.props.body}</Text>
       </Card>

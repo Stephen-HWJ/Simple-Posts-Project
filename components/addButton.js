@@ -38,6 +38,10 @@ class AddButton extends React.Component {
       .then((json) => {
         console.log(json);
         this.props.addPost(json);
+        this.setState({
+          title: "title",
+          body: "body",
+        });
       });
   };
 
@@ -57,7 +61,7 @@ class AddButton extends React.Component {
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
               <TextInput
-                style={styles.modalText}
+                style={styles.titleText}
                 placeholder={"Title"}
                 onChangeText={(text) => {
                   this.setState({ title: text });
@@ -104,9 +108,9 @@ const styles = StyleSheet.create({
     marginTop: 22,
   },
   modalView: {
-    margin: 20,
+    margin: 10,
     backgroundColor: "white",
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 35,
     alignItems: "center",
     shadowColor: "#000",
@@ -129,11 +133,20 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
   },
+  titleText: {
+    marginBottom: 15,
+    textAlign: "center",
+    borderColor: "gray",
+    borderWidth: 1,
+    width: 300,
+  },
   modalText: {
     marginBottom: 15,
     textAlign: "center",
     borderColor: "gray",
     borderWidth: 1,
+    width: 300,
+    height: 100,
   },
 });
 
