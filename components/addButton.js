@@ -67,7 +67,6 @@ class AddButton extends React.Component {
                   this.setState({ title: text });
                 }}
               ></TextInput>
-
               <TextInput
                 style={styles.modalText}
                 multiline
@@ -110,7 +109,7 @@ const styles = StyleSheet.create({
   modalView: {
     margin: 10,
     backgroundColor: "white",
-    borderRadius: 10,
+    borderRadius: 8,
     padding: 35,
     alignItems: "center",
     shadowColor: "#000",
@@ -136,17 +135,19 @@ const styles = StyleSheet.create({
   titleText: {
     marginBottom: 15,
     textAlign: "center",
-    borderColor: "gray",
+    borderColor: "lightgray",
     borderWidth: 1,
-    width: 300,
+    width: 280,
+    borderRadius: 5,
   },
   modalText: {
     marginBottom: 15,
     textAlign: "center",
-    borderColor: "gray",
+    borderColor: "lightgray",
     borderWidth: 1,
     width: 300,
     height: 100,
+    borderRadius: 5,
   },
 });
 
